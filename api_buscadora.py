@@ -27,8 +27,8 @@ def Solicitar_consulta():
     if not produto_busca or not quantidade:
         return jsonify({"erro": "Argumentos inválidos ou ausentes"}), 400
     
-    if len(produto_busca) <= 4 and len(quantidade) < 4:
-        return jsonify({"erro": "URL ou metodo invalido, lembre se de utilizar os argumentos na url : ?produto=geladeita  &metodo="}), 400
+    if len(produto_busca) <= 4 or int(quantidade) <= 0 :
+        return jsonify({"erro": "URL ou quantidade invalido, lembre se de utilizar os argumentos na url : ?produto=geladeita  &quantidade="}), 400
     # Criar o dicionário de produtos
     dicionario_produtos_ml = {}
 
