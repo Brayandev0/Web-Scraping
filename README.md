@@ -1,5 +1,6 @@
 ## Pagina de Documentacaao da API
-![image](https://github.com/user-attachments/assets/3a3700ff-5f50-4e37-9d61-310333e7bc99)
+![image](https://github.com/user-attachments/assets/df77125d-a6ec-4aaa-9f80-777484a86d52)
+
 ## Descricao 
 Esta API foi criada com a finalidade de fornecer a busca automatizada por produtos por meio de requisicoes, fornecendo os produtos mais baratos e de fontes confiaveis, Todas as respostas da API sao feitas em JSON, a api pega os produtos e filtra 
 para pegar os produtos mais baratos, o retorno da api e ordenado do menor valor ao valor maximo
