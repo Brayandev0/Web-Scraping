@@ -44,8 +44,12 @@ Todos os argumentos fornecidos pelo usuario Sao tratados e caso o usuario inform
 
 ## Rota principal 
 ``` /api/solicitar```
-A url deve ser passada com os argumentos Produtos e quantidade 
-``` ( /api/solicitar/?produto=" Produto para a pesquisa " &quantidade= "Quantidade de produtos que devem ser retornados" )```
+A url deve ser passada com os argumentos Produtos e quantidade .
+
+
+``` ( /api/solicitar/?produto=" Produto para a pesquisa " &quantidade= "Quantidade de produtos que devem ser retornados" )```.
+
+
 apos a pesquisa a api retornara um JSON com os produtos 
 
 ```
