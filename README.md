@@ -1,7 +1,8 @@
 ## Pagina de Documentacaao da API
 ![image](https://github.com/user-attachments/assets/3a3700ff-5f50-4e37-9d61-310333e7bc99)
 ## Descricao 
-Esta API foi criada com a finalidade de fornecer a busca automatizada por produtos por meio de requisicoes, fornecendo os produtos mais baratos e de fontes confiaveis, Todas as respostas da API sao feitas em JSON 
+Esta API foi criada com a finalidade de fornecer a busca automatizada por produtos por meio de requisicoes, fornecendo os produtos mais baratos e de fontes confiaveis, Todas as respostas da API sao feitas em JSON, a api pega os produtos e filtra 
+para pegar os produtos mais baratos, o retorno da api e ordenado do menor valor ao valor maximo
 
 ## Tecnologias usadas
 - Python3.12.3
@@ -11,8 +12,14 @@ Esta API foi criada com a finalidade de fornecer a busca automatizada por produt
 - Threading
 
 ## Otimizacoes 
-- Foram Utilizadas Threads para fazer as buscas de forma rapida e mais eficiente
-- Foram mantidas somente as variaveis importantes para o projeto, Todas as variaveis que eram e poderiam ser inuteis foram removidas para maior performance
+- Foram Utilizadas Threads para fazer as buscas de forma rapida e mais eficiente.
+- Foram mantidas somente as variaveis importantes para o projeto, Todas as variaveis que eram e poderiam ser inuteis foram removidas para maior performance.
+
+  
+**Tempo de Resposta**
+  o tempo de resposta da api varia de acordo com a velocidade de busca e a quantidade de produtos solicitados
+  - 10 Produtos : 1.59 segundos
+  - 50 produtos : 2.0 segundos
 
 ## Seguranca  
 Todos os argumentos fornecidos pelo usuario Sao tratados e caso o usuario informe um valor invalido e retornado um erro no formato JSON
@@ -37,7 +44,8 @@ Todos os argumentos fornecidos pelo usuario Sao tratados e caso o usuario inform
 
 ## Rota principal 
 ``` /api/solicitar```
-A url deve ser passada com os argumentos Produtos e quantidade ( /api/solicitar/?produto=" Produto para a pesquisa " &quantidade= "Quantidade de produtos que devem ser retornados" )
+A url deve ser passada com os argumentos Produtos e quantidade 
+``` ( /api/solicitar/?produto=" Produto para a pesquisa " &quantidade= "Quantidade de produtos que devem ser retornados" )```
 apos a pesquisa a api retornara um JSON com os produtos 
 
 ```
