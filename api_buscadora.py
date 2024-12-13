@@ -19,10 +19,10 @@ def Solicitar_consulta():
 
     except ValueError:
         return jsonify({"Error":403,
-                        "Message":"Quantidade invalida"})
+                        "Message":"Quantidade invalida"}),403
     except TypeError:        
         return jsonify({"Error":403,
-                        "Message":"Quantidade invalida"})
+                        "Message":"Quantidade invalida"}),403
     # verificando se os produtos sao validos 
     if not produto_busca or not quantidade:
         return jsonify({"erro": "Argumentos inválidos ou ausentes"}), 400
