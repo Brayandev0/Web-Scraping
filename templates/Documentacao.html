@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='Documentacao.css')}}">
+    <title>Documentação da API</title>
+</head>
+<body>
+    <div class="container-principal">
+        <h1>! Documentação da API Scraping !</h1>
+        <hr>
+        <p class="descricao">Para acessar a api corretamente deve se informar os argumentos obrigatorios da API</p>
+        <div id="documentacao-api">
+            <h3>Endpoint: <code id="codigo">/api/solicitar/</code></h3>
+            <p><strong>Argumentos: quantidade | produto</strong></p>
+            <br>
+            <p> Exemplo de url com os argumentos : <br> <code id="codigo"> /api.solicitar/?produto={Produto}&quantidade={quantidade} </code></p>
+            <br>
+            <p>Os produtos serao usados para consulta e a quantidade e define quantos produtos serao retornados, automaticamente retornara o produto mais barato e todas as respostas sao em JSON </p>
+            <br>
+            <br>
+        </div>
+            <h3 id="exemplo_resposta" > <strong> Exemplo de Resposta </strong></h3>
+            <br>
+            <br>
+            <pre id="json">
+"Monitor Fullhd Pctop Led 19 60hz Hdmi Vga Mlp190hdmi  Barato",
+                   
+{"url": "https://produto.mercadolivre.com.br/{url do produto}",
+"valor": 86.25,
+"vendedor": "Mercado Livre"}
+                    
+                
+            </pre>
+            <p>by <a style="text-decoration: none; color:cornflowerblue;" target="_blank" href="https://github.com/Brayandev0/">Brayan_dev</a> </p>
+            
+    </div>
+</body>
+</html>
